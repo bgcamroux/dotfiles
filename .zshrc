@@ -10,4 +10,4 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-config config --local status.showUntrackedFiles no
+
