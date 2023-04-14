@@ -38,6 +38,15 @@ ${goto 40}$color2${top_mem name 4}$alignr$color${top_mem mem_res 4}
 # ${goto 40}$color2${top_mem name 5}$alignr$color${top_mem mem_res 5}
 #
 ${voffset 10}${goto 40}${color}Swap${font Bitstream Vera Sans:bold:size=8}$alignr${swap}/ ${swapfree}
+${voffset 10}${goto 40}$font${color2}/dev/sda$alignr$color${hddtemp /dev/sda} °C
+${goto 40}$font${color2}/dev/sdb$alignr$color${hddtemp /dev/sdb} °C
+${voffset 10}${goto 40}$font${color2}Radeon$alignr$color${hwmon 4 temp 1} °C
+${goto 40}$font${color2}CPU Package$alignr$color${hwmon 3 temp 1} °C
+${goto 45}$font${color2}Core 0$alignr$color${hwmon 3 temp 2} °C
+${goto 45}$font${color2}Core 1$alignr$color${hwmon 3 temp 3} °C
+${goto 45}$font${color2}Core 2$alignr$color${hwmon 3 temp 4} °C
+${goto 45}$font${color2}Core 3$alignr$color${hwmon 3 temp 5} °C
+
 ${voffset 15}$font$alignr${execi 10000 awk -F= '/TION/ {print $2}' /etc/lsb-release |sed 's/"//g'} \
 ${execi 10000 awk -F= '/EASE=/ {printf $2" "} /NAME/ {print $2}' /etc/lsb-release}
 ${voffset 10}${color2}${alignr}${execi 1200 whoami}@${nodename}
