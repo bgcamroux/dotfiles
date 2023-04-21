@@ -1,4 +1,4 @@
-window:
+0;1800;1cOBOBOAAOAOB0[Iwindow:
   padding:
     x: 10
     y: 10
@@ -24,7 +24,7 @@ font:
   bold_italic:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
-  size: 7
+  size: 10
 draw_bold_text_with_bright_colors: true
 
 import:
