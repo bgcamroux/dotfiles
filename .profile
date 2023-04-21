@@ -3,7 +3,7 @@
 # Profile runs on login. Environment variables set here
 
 # Add ~/.local/bin to $PATH
-export PATH="PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+export PATH="$PATH:/home/brad/.local/bin"
 
 # Default Programs
 export BROWSER=/usr/bin/firefox
