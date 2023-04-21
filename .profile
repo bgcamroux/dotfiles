@@ -7,7 +7,7 @@ export PATH="$PATH:/home/brad/.local/bin"
 
 # Default Programs
 export BROWSER=/usr/bin/firefox
-export EDITOR=/usr/bin/emacsclient
+export EDITOR=/usr/bin/emacsclient -nc
 export TERMINAL=/usr/bin/alacritty
 
 # XDG Environment Settings
