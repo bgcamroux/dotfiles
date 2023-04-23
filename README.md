@@ -1,3 +1,9 @@
 # Configuration: Pluto Desktop
 
-As I get smarter and learn more, some useful information may appear here.
+## Me and My Linux Experience
+
+My name is Brad, and I'm just another Linux hobbyist out there in the nether-regions of the universe. I've been running Linux off and on since 1998, but mostly on. I started out with RedHat and Debian, moved into Gentoo, then took a break for a while before coming back to a few different distros. Finally I found my place with Archlinux. And while I love Arch and the Arch philosophy, I've never been able to get it riced just the way I wanted. After my trusty hard drives called in to meet the giant hard drive in the sky, I tried out Manjaro. I liked it, but there were aspects I didn't care for such as the update schedule, holding back kernels, and the like. Then I found EndeavourOS and I feel like I'm home. They've done a nice job on this system, both visually and technically.
+
+Next up was to try to get my configuration under control. I've always struggled with this. Then I found [this post on HackerNews](https://news.ycombinator.com/item?id=11070797) for managing dotfiles with Git. I'm not very familiar with Git, but it didn't take me long to understand how to operate with this model.
+
+Experienced users may look through my history and shake their heads. I don't care. I'm rather new to this and learning, so yeah things might look messy. I also started while I was in Manjaro, then switched to Endeavour, tried Sway, thought it was great until I started noticing certain things (video chats most of all) didn't behave as expected, so switched back to i3wm. So yeah, things are messy. Whatever. I'll get stuff cleaned up as I learn and progress. In the mean time, if you like something in my configs you're welcome to copy or fork it and make it your own. If you notice something that could be greatly improved, please let me know (I'm guessing this would be by opening an Issue).
