@@ -30,7 +30,7 @@
     height = 300
 
     # Position the notification in the top right corner
-    origin = bottom-right
+    origin = top-right
 
     # Offset from the origin
     offset = 30x40
@@ -68,7 +68,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 16
+    transparency = 20
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -295,14 +295,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#28143c"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     icon = /usr/share/icons/Arc-X-D/status/16/dialog-information.png
 
 [urgency_normal]
     background = "#28143c"
     foreground = "#ffffff"
-    timeout = 5
+    timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /usr/share/icons/Arc-X-D/status/16/dialog-question.png
 
