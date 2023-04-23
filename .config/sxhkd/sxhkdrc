@@ -1,0 +1,16 @@
+##########
+##
+## sxkhd config
+##
+##########
+
+XF86Audio{Prev,Next}
+   playerctl {prev,next}
+
+XF86LaunchA
+   rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi
+
+mod4 + XF86LaunchA
+   rofi -show window -config ~/.config/rofi/rofidmenu.rasi
+
+
