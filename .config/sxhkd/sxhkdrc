@@ -7,10 +7,25 @@
 XF86Audio{Prev,Next}
    playerctl {prev,next}
 
+XF86AudioPlay
+   playerctl play-pause
+
 XF86LaunchA
    rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi
 
 mod4 + XF86LaunchA
    rofi -show window -config ~/.config/rofi/rofidmenu.rasi
 
+## Blue key on 2x3 keypad XF86Tools
 
+## Yellow key on 2x3 keypad XF86Launch5
+
+## Lt Blue key on 2x3 keypad XF86Launch6
+
+## White key on 2x3 keypad XF86Launch7
+
+## Black key on 2x3 keypad XF86Launch8
+
+# Red key on 2x3 keypad
+#XF86Launch9
+#   "maim -sD ~/Screenshots/$(date +%Y%m%D-%H%M%S).png"
