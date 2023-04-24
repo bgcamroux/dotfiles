@@ -33,8 +33,10 @@ zstyle ':completion:*' cache-path ~/.cache/zsh/cache
 
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
-# Add ~/.local/bin to $PATH
-export PATH="$PATH:${$(find ~/.local/bin -maxdepth 1 -type d -printf %p:)%%:}"
+# Add ~/.local/bin to $PATH uniquely
+export LOCALBIN="${$(find ~/.local/bin -maxdepth 1 -type d -printf %p)%%}"
+path=($LOCALBIN "$path[@]")
+typeset -U path PATH
 
 # Default Programs
 export BROWSER=/usr/bin/firefox
