@@ -19,6 +19,15 @@ XF86LaunchA
 mod4 + XF86LaunchA
    rofi -show window -config ~/.config/rofi/rofidmenu.rasi
 
+shift + @XF86MonBrightnessDown
+   emacsclient -nc
+
+ctrl + @XF86MonBrightnessDown
+   emacs
+
+shift + ctrl + @XF86MonBrightnessDown
+   systemctl --user restart emacs.service
+
 ## Blue key on 2x3 keypad XF86Tools
 
 ## Yellow key on 2x3 keypad XF86Launch5
