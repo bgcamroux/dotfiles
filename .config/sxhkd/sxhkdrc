@@ -27,5 +27,5 @@ mod4 + XF86LaunchA
 ## Black key on 2x3 keypad XF86Launch8
 
 # Red key on 2x3 keypad
-#XF86Launch9
-#   "maim -sD ~/Screenshots/$(date +%Y%m%D-%H%M%S).png"
+@XF86Launch9
+   maim -sD ~/Screenshots/$(date +%Y%m%d-%H%M%S).png
