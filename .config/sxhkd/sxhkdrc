@@ -5,10 +5,13 @@
 ##########
 
 XF86Audio{Prev,Next}
-   playerctl {prev,next}
+   mpc -q {prev,next}
 
 XF86AudioPlay
-   playerctl play-pause
+   mpc -q toggle	# toggle between play/pause
+
+ctrl + XF86AudioPlay
+   mpc -q single	# pause playback after current track
 
 XF86LaunchA
    rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi
@@ -28,4 +31,10 @@ mod4 + XF86LaunchA
 
 # Red key on 2x3 keypad
 @XF86Launch9
-   maim -sD ~/Screenshots/$(date +%Y%m%d-%H%M%S).png
+   maim -usD ~/Screenshots/$(date +%Y%m%d-%H%M%S).select.png && notify-send 'Screenshot Saved' 'Your selection screenshot has been saved.'
+
+ctrl + @XF86Launch9
+   maim -u -i $(xdotool getactivewindow) ~/Screenshots/$(date +%Y%m%d-%H%M%S).window.png && notify-send 'Screenshot Saved' 'Your full-window screenshot has been saved'
+
+#shift + ctrl + @XF86Launch9 ## Full double-screen picture
+#   maim 
