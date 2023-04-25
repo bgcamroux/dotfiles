@@ -40,7 +40,7 @@ typeset -U path PATH
 
 # Default Programs
 export BROWSER=/usr/bin/firefox
-export EDITOR="/usr/bin/emacsclient -nc"
+export EDITOR="/usr/bin/emacsclient -c"
 export TERMINAL=/usr/bin/alacritty
 
 # XDG Environment Settings
