@@ -20,10 +20,14 @@ mod4 + XF86LaunchA
    rofi -show window -config ~/.config/rofi/rofidmenu.rasi
 
 shift + @XF86MonBrightnessDown
-   emacsclient -nc
+   emacsclient -nc -e '(load "~/.config/emacs/init.el")'
+                       # New emacs client instance with configuration loaded
 
 ctrl + @XF86MonBrightnessDown
-   emacs
+   emacs               # New instance of emacs with configuration loaded
+
+ctrl + alt + @XF86MonBrightnessDown
+   emacs -q            # New instance of emacs with no configuration loaded
 
 shift + ctrl + @XF86MonBrightnessDown
    systemctl --user restart emacs.service
