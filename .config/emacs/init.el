@@ -15,7 +15,7 @@
 (require-theme 'modus-themes)
 (setq modus-themes-to-toggle '(modus-operandi-tinted modus-vivendi-tinted))
 (load-theme 'modus-vivendi-tinted 1) 
-(define-key global-map (kbd "<f5>") #'modus-themes-toggle
+(define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 ;; Initialize package sources
 (require 'package)
