@@ -10,6 +10,26 @@
 
 (set-face-attribute 'default nil :font "JetBrainsMonoNL Nerd Font Mono" :height 100)
 
+;; Install straight.el on whatever system this config is used on. It will not attempt to
+;; install it twice, so no problems there.
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+	(url-retrieve-synchronously
+	 "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+	 'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp))
+    (load bootstrap-file nil 'nomessage)))
+;; To install a package, include an expression like this:
+;; (straight-use-package '<pkgname>)
+;; straight.el will then install the package if it hasn't been installed already.
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; Load up Prot's excellent Modus- themes, and set them to toggle between operandi-tinted
 ;; and vivendi-tinted. Assign the toggle function to <f5> on the keyboard.
 (require-theme 'modus-themes)
