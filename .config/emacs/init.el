@@ -52,19 +52,22 @@
   (elpaca-use-package-mode)                 ; enable :elpaca use-package keyword
   (setq elpaca-use-package-by-default t))   ; assume :elpaca t unless otherwise specified
 
-(elpaca-wait)            ; block until current queue is processed
+; block until current queue is processed - this will allow use of use-package right away
+(elpaca-wait)
 
+(use-package modus-themes)
 (use-package i3wm-config-mode)
 (use-package rainbow-delimiters)
 (use-package org-superstar)
 (use-package orca)
 (use-package org-d20)
-(use-package modus-themes)
 (use-package latex-extra)
 (use-package latex-table-wizard)
 (use-package mu2tex)
 (use-package auctex)
 
+; block until queue is processed - allows use of these packages
+(elpaca-wait)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -72,7 +75,7 @@
 ;; and vivendi-tinted. Assign the toggle function to <f5> on the keyboard.
 (require-theme 'modus-themes)
 (setq modus-themes-to-toggle '(modus-operandi-tinted modus-vivendi-tinted))
-(load-theme 'modus-vivendi-tinted 1) 
+(load-theme 'modus-vivendi-tinted t)
 (define-key global-map (kbd "<f5>") #'modus-themes-toggle)
 
 
