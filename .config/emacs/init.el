@@ -1,7 +1,8 @@
 ;;  -*- lexical-binding: t; -*-
 (setq inhibit-startup-message t      ; turn off the startup message screen
-      visible-bell t)                ; enable the visual bell
-
+      visible-bell t                 ; enable the visual bell
+      next-line-add-newlines t)      ; C-n inserts newlines if point is at end of buffer
+      
 (scroll-bar-mode -1)                 ; disable scrollbar
 (tool-bar-mode   -1)                 ; disable toolbar
 (tooltip-mode    -1)                 ; disable tooltips
