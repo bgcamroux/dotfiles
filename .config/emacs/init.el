@@ -330,6 +330,16 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(require 'smtpmail)
+(setq smtpmail-default-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-server "smtp.gmail.som"
+      smtpmail-smtp-service 587
+      smtp-stream-type 'ssl)
+
+(setq message-send-mail-function 'smtpmail-send-it)
+(setq message-kill-buffer-on-exit t)
+
+(require 'mu4e)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (custom-set-variables
