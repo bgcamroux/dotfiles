@@ -69,8 +69,9 @@
 (use-package latex-table-wizard)  ; LaTeX tables
 (use-package mu2tex)              ; LaTeX
 ;(use-package auctex)              ; LaTeX
+(use-package magit)               ; Track changes with Git
 
-; block until queue is processed - allows use of these packages
+;; block until queue is processed - allows use of these packages
 (elpaca-wait)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -84,7 +85,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Set up which-key to see what's available based on what prefix has been pressed
+;; Set up which-key to see what's available based on what prefix has been pressed
 (use-package which-key
   :init (which-key-mode)
   :diminish which-key-mode
@@ -95,7 +96,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Line Numbering
+;; Line Numbering
 (column-number-mode)
 
 ;; Enable line numbers for some modes
