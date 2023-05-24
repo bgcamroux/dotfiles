@@ -33,7 +33,7 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.cache/zsh/cache
 
-eval "$(bw completion --shell zsh); compdef _bw bw;"
+#eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
@@ -70,7 +70,7 @@ SAVEHIST=100000
 HISTFILE="${XDG_CACHE_HOME}/zsh/history"
 
 # Aliases
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 alias cp="cp -i"                                       # Interactive mode for copying
 alias df="df -h"                                       # Human-readable sizes
 
